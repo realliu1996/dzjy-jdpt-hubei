@@ -15,11 +15,22 @@ interface EvaluationModalProps {
 }
 
 const POSITIVE_ITEMS: string[] = [
-  '事实清楚', '证据确凿', '处理恰当', '定性准确', '依据正确', '程序合法', '文书完整'
+  '事实清楚', '证据确凿', '佐证充分', '定性准确', '依据正确', '处理恰当', '程序合法', '文书完整'
 ];
 
 const NEGATIVE_ITEMS: string[] = [
-  '未调查核实，直接否定预警', '认定事实不清，证据不足', '佐证材料不充分', '未准确界定行为性质', '适用依据不正确', '未依法处理或处理不到位', '处置程序不规范', '文书不规范、不完整'
+  '未调查核实，直接否定预警',
+  '未调查核实，直接认定违法违规',
+  '调查核实事实不清楚',
+  '佐证材料不足或单一',
+  '未经核实采信单一方面情况说明',
+  '预警不属实认定错误',
+  '佐证与预警信息无关',
+  '问题定性不准确',
+  '适用法律法规不正确',
+  '未对当事人作任何处理',
+  '追责问责遗漏责任主体',
+  '未上传处理结果材料'
 ];
 
 const EMPTY_ARRAY: string[] = [];
@@ -136,7 +147,7 @@ export default function EvaluationModal({
             onClick={handleSubmit}
             className="px-8 bg-blue-600 hover:bg-blue-700 text-white"
           >
-            保存
+            提交
           </Button>
         </DialogFooter>
       </DialogContent>

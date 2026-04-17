@@ -26,7 +26,7 @@ export default function EvaluationFlow() {
       department: '市场部',
       time: '2023-04-08 11:15',
       positiveTags: ['定性准确', '依据正确'],
-      negativeTags: ['未调查核实，直接否定预警', '认定事实不清，证据不足']
+      negativeTags: ['未调查核实，直接否定预警', '调查核实事实不清楚']
     }
   ]);
   const [isModalOpen, setIsModalOpen] = useState(false);
